@@ -509,6 +509,11 @@ p {
     margin-right: 0;
   }
 }
+@media (min-width: 992px) {
+  .nav__link {
+    font-size: 1.25rem;
+  }
+}
 .nav__link:hover {
   color: #852728;
 }
@@ -559,10 +564,54 @@ p {
 }
 .block__heading {
   text-transform: uppercase;
+  font-weight: 700;
 }
 .block__text {
   font-size: 1.125rem;
   margin: 0;
+}
+
+.about-us__heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-us__heading::after {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.about-us__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+@media (min-width: 576px) {
+  .about-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .about-us__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.about-us__block {
+  text-align: center;
+}
+.about-us__img {
+  margin: 0 auto 2rem auto;
+}
+.about-us__block-heading {
+  font-size: 1.5rem;
+}
+@media (min-width: 1200px) {
+  .about-us__block-heading {
+    font-size: 1.75rem;
+  }
 }
 
 .text-center {

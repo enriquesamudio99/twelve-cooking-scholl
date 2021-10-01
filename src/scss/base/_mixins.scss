@@ -59,3 +59,17 @@
     gap: $gap;
 }
 
+@mixin heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin: 0 auto;
+        background-image: url(../img/separador.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

@@ -50,6 +50,10 @@
             }
         }
 
+        @include m.lg {     
+            font-size: 1.25rem;
+        }
+
         &:hover {
             color: v.$primary;
         }
