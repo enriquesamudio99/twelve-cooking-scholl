@@ -1,0 +1,63 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.blocks {
+
+    &__grid {
+        @include m.md { 
+            @include m.grid(2,0);
+        }
+    }
+
+}
+
+.block {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(1) {
+        background-color: v.$primary;
+    }
+
+    &:nth-child(2) {
+        background-image: url(../img/bloque_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &:nth-child(3) {
+        background-color: v.$secondary;
+    }
+
+    &:nth-child(4) {
+        background-image: url(../img/bloque_2.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    &__content {
+        text-align: center;
+        color: v.$white;
+        width: 90%;
+        max-width: 400px;
+        padding: 2rem 0;
+        border-top: 2px solid v.$white;
+        border-bottom: 2px solid v.$white;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        margin: 0;
+    }
+}
