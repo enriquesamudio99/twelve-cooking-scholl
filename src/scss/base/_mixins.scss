@@ -32,10 +32,9 @@
 
 @mixin btn($bgColor, $textColor) {
     background-color: $bgColor;
-    padding: 1.5rem 4rem;
+    padding: .75rem 1.75rem;
     color: $textColor;
-    margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.125rem;
     font-weight: 400;
     display: inline-block;
     font-weight: 700;
@@ -44,7 +43,7 @@
     transition-duration: .3s;
     text-align: center;
 
-    @include tablet {
+    @include md {
         width: auto;
     }
     &:hover {
@@ -66,6 +65,7 @@
     &::after {
         content: "";
         display: block;
+        width: 220px;
         height: 100px;
         margin: 0 auto;
         background-image: url(../img/separador.png);
