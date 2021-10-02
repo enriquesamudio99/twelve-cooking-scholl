@@ -1,0 +1,31 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer {
+    border-bottom: 8px solid v.$primary;
+    padding: 3.5rem 0;
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include m.md { 
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__copyright {
+        margin: v.$gutter 0 0;
+        font-size: 1.125rem;
+
+        @include m.md { 
+            margin: 0;
+        }
+
+        @include m.lg { 
+            font-size: 1.25rem;
+        }
+    }
+}
