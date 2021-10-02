@@ -712,6 +712,47 @@ p {
   background-color: #5e1b1c;
 }
 
+.school {
+  padding: 14rem 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/chef_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #FFFFFF;
+}
+.school__heading {
+  margin-bottom: 1.25rem;
+}
+.school__text {
+  font-size: 1.5rem;
+  width: calc(100% - 2rem);
+  max-width: 300px;
+  margin: 0 auto 1.25rem;
+}
+.school__link {
+  background-color: #852728;
+  padding: 0.75rem 1.75rem;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  padding: 1rem 2.25rem;
+}
+@media (min-width: 768px) {
+  .school__link {
+    width: auto;
+  }
+}
+.school__link:hover {
+  background-color: #5e1b1c;
+}
+
 .text-center {
   text-align: center;
 }
